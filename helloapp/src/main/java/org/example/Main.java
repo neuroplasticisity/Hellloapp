@@ -1,11 +1,15 @@
 package org.example;
-public class Main{
+public class Main {
     public static void main(String[] args) {
+
+        // Default name
+        String name = "World";
+
+        // Check if a name is provided as a command-line argument
         if (args.length > 0) {
-            String name = args[0];
-            System.out.println("Hello, " + name + "!");
-        } else {
-            System.out.println("Hello, World!");
+            name = args[0]; // Use the provided name
         }
+
+        System.out.println("Hello, " + name + "!");
     }
 }
