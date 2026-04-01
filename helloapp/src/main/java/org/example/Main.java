@@ -4,15 +4,16 @@ public class Main{
 
         String message;
 
-        // Check if arguments are provided
         if (args.length > 0) {
-            // Join all names with comma and space
             message = String.join(", ", args);
         } else {
-            // Default value
             message = "World";
         }
 
+        // UC5 enhancement: count names
+        int count = (args.length > 0) ? args.length : 1;
+
         System.out.println("Hello, " + message + "!");
+        System.out.println("Number of people greeted: " + count);
     }
 }
